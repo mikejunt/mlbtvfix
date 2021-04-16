@@ -1,0 +1,13 @@
+{
+    "name": "mlb.tv Fixer",
+    "description": "Removes unremovable box score from right side of web-based MLB.tv.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["scripting"],
+    "content_scripts":  [
+        {
+            "matches": ["https://*.mlb.com/tv/g*"],
+            "js": ["worker.js"]
+        }
+    ]
+  }
